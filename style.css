@@ -400,7 +400,7 @@ button {
 		transition: all 500ms;
 	}
 
-	.listen-live__button-left svg {
+	.listen-live__button-left .desktop-button {
 		margin-left: 32px;
 		transition: all 500ms;
 	}
@@ -409,7 +409,7 @@ button {
 		background-color: #364267;
 	}
 
-	.listen-live__button-left:hover svg {
+	.listen-live__button-left:hover .desktop-button {
 		margin: 0;
 	}
 
@@ -430,13 +430,17 @@ button {
 		background-color: #364267;
 	}
 
-	.listen-live__button-right:hover svg {
+	.listen-live__button-right:hover .desktop-button {
 		margin: 0;
 	}
 
-	.listen-live__button-right svg {
+	.listen-live__button-right .desktop-button {
 		margin-left: -56px;
 		transition: all 500ms;
+	}
+
+	.mobile-button {
+		display: none;
 	}
 
 	.swiper-wrapper {
@@ -1137,6 +1141,7 @@ button {
 		-o-flex-direction: row;
 		flex-direction: row;
 		align-content: flex-start;;
+		position: relative;
 	}
 
 	.video-story__list {
@@ -2672,7 +2677,7 @@ footer {
 	}
 }
 
-@media (max-width: 1016px) {
+@media (max-width: 1023px) {
 
 	body {
 		min-width: 735px;
@@ -2776,9 +2781,34 @@ footer {
 		transform: translateX(-5%);
 	}
 
+	.desktop-button {
+		display: none;
+	}
+
 	.listen-live__button-left,
 	.listen-live__button-right {
-		display: none;
+		background-color: transparent;
+		border-radius: 0;
+		width: 10px;
+		height: 17px;
+	}
+
+	.mobile-button {
+		display: inline;
+	}
+
+	.listen-live__button-left {
+		left: -4px;
+	}
+
+	.listen-live__button-right {
+		right: -5px;
+	}
+
+	.listen-live__button-left:hover,
+	.listen-live__button-right:hover {
+		background-color: #13142e;
+	  	box-shadow: 0 0 15px 15px #13142e;
 	}
 
 	.hot-podcasts__list {
@@ -2849,6 +2879,10 @@ footer {
 
 	.week__genre {
 		font-size: 11.5px;
+	}
+
+	.video-story__photo {
+		opacity: 0.8;
 	}
 
 	.video-story__button-left {
@@ -3153,6 +3187,14 @@ footer {
 		width: 470px;
 	}
 
+	.listen-live__button-left {
+		left: 7px;
+	}
+
+	.listen-live__button-right {
+		right: 10px;
+	}
+
 	.hot-podcasts__list {
 		height: 260px;
 	}
@@ -3188,8 +3230,8 @@ footer {
 	}
 
 	.week__track-list {
-		width: 520px;
-		left: 30px;
+		width: 510px;
+		left: 27px;
 	}
 
 	.week__track-list li {
@@ -3233,10 +3275,12 @@ footer {
 	}
 	
 	.video-story__photo {
-		background-size: 55%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
 		bottom: -50px;
+		width: 180px;
+		height: 395px;
 	}
 
 	.video-story__first {
@@ -3251,6 +3295,10 @@ footer {
 
 	.video-story-swiper {
 		width: 470px;
+	}
+
+	.video-story__photo {
+		opacity: 0.7;
 	}
 
 	.video-story__button-left {
@@ -3742,10 +3790,6 @@ footer {
 		width: 30px;
 		margin-right: 0;
 		margin-right: 20px;
-	}
-
-	.video-story__photo {
-		display: none;
 	}
 
 	.video-story__first__heading {
