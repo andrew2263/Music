@@ -39,6 +39,31 @@
 		$('.header__buttons-input').toggleClass('header__buttons-input-visible');
 	});
 
+	$('.header__burger').on('click', function(e) {
+		e.preventDefault();
+		disableScroll();
+		$('.header__nav').addClass('header__nav-open');
+		$('.header__nav-container').css('display', 'block');
+	});
+
+	$('.header__close').on('click', function(e) {
+		e.preventDefault();
+		enableScroll();
+		$('.header__nav').removeClass('header__nav-open');
+		$('.header__nav-container').css('display', 'none');
+	});
+
+	$(window).scroll(function() {
+		let devWidth = $(window).width();
+		if (devWidth <= 1770 && devWidth > 768) {
+			if ($(window).scrollTop() > 80) {
+				$('.header__logo').css('visibility', 'hidden');
+			} else {
+				$('.header__logo').css('visibility', 'visible');
+			}
+		}
+	});
+
 	$('.week__days-day a').on('click', function(e) {
 		e.preventDefault();
 		let href = $(this).attr('href');
@@ -50,6 +75,13 @@
 		}, 150);
 		$('.week__days-day').removeClass('week__days-day-active');
 		$(weekDay).addClass('week__days-day-active');
+	});
+
+	$('.first__button').on('click', function(e) {
+		e.preventDefault();
+		let id = $(this).attr('href');
+		let top = $(id).offset().top;
+		$('body, html').animate({scrollTop: top}, 700);
 	});
 
 	$('.week__button-right').on('click', function(e) {
@@ -116,6 +148,7 @@
 		e.preventDefault();
 		let hrefChart = $(this).attr('href');
 		let track = $(this).parent();
+		let devWidth = $(window).width();
 		$('.music-chart__current-track').removeClass('music-chart__current-track-active').removeClass('in');
 		$(hrefChart).addClass('music-chart__current-track-active');
 		setTimeout(function() {
@@ -123,6 +156,11 @@
 		}, 100);
 		$('.music-chart__tracklist__item').removeClass('music-chart__tracklist__item-active');
 		$(track).addClass('music-chart__tracklist__item-active');
+		if (devWidth < 1024) {
+			let paddingTop = parseInt($('.music-chart__current-track').css('padding-top'));
+			let top = $(hrefChart).offset().top - paddingTop;
+			$('body, html').animate({scrollTop: top}, 300);
+		}
 	});
 
 	$('.footer__sign-in-button').on('click', function(e) {
@@ -143,7 +181,7 @@
 		e.preventDefault();
 		$('.sign-in').fadeOut(100);
 		$('#forgot-password').fadeIn(100);
-	})
+	});
 
 	$('.video-story__list-play').on('click', function(e) {
 		e.preventDefault();
@@ -157,6 +195,16 @@
 		$(audio).parents('li').removeClass('item-active');
 		isPlaying = false;
 		audio = $(this).children()[0];
+	});
+
+	$('#contact-get-in-touch__checkbox').on('click', function() {
+		if ($(this).is(':checked')) {
+			console.log('checked');
+			$('#contact-get-in-touch__submit').removeAttr('disabled', 'disabled');
+		} else {
+			console.log('NOT checked');
+			$('#contact-get-in-touch__submit').attr('disabled', 'disabled');
+		}
 	});
 
 	$('.popup-close').on('click', function(e) {
@@ -233,3 +281,5 @@
 			isPlaying = true;
 		}
 	});
+
+	

@@ -15,42 +15,60 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container clearfix">
-			<div class="header__logo">
-				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+		<div class="container-flex header-container">
+			<div class="header__left">
+				<div class="header__logo-burger">
+					<a href="#" class="header__burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<a href="index.html" class="header__logo" ><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<div class="header__nav-container">
+					<div class="header__nav-wrapper">
+						<nav class="header__nav">
+							<a href="#" class="header__close">
+								<span></span>
+								<span></span>
+							</a>
+							<ul>
+								<li class="header__nav__item header__nav__item_active"><img src="img/home_img.png" alt="home=img">
+									<a href="index.html"><span data-text="Home"></span>Home</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Blog"></span>Blog</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Shows"></span>Shows</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Charts"></span>Charts</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Team"></span>Team</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="video.html"><span data-text="Video"></span>Video</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Podcasts"></span>Podcasts</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Event"></span>Event</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="#"><span data-text="Pages"></span>Pages</a>
+								</li>
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+									<a href="contact.html"><span data-text="Contact&nbsp;Us"></span>Contact Us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
-			<nav class="header__nav">
-				<ul>
-					<li class="header__nav__item header__nav__item_active"><img src="img/home_img.png" alt="home=img">
-						<a href="index.html"><span data-text="Home"></span>Home</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Blog"></span>Blog</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Shows"></span>Shows</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Charts"></span>Charts</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Team"></span>Team</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="video.html"><span data-text="Video"></span>Video</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Podcasts"></span>Podcasts</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Event"></span>Event</a>
-					</li>
-					<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
-						<a href="#"><span data-text="Pages"></span>Pages</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__buttons">
+			<div class="header__right header__buttons">
 				<button class="header__button-buy"></button>
 				<input type="text" class="header__buttons-input" name="search-input" placeholder="type here...">
 				<button class="header__button-search"></button>
@@ -142,7 +160,7 @@
 								<button class="listen-live__list-item-play">
 								</button>
 							</div>
-							<h4 class="listen-live__name"><span data-text="Tweets&nbsp;of&nbsp;The&nbsp;Day"></span>Tweets of The Day</h4>
+							<h3 class="listen-live__name"><span data-text="Tweets&nbsp;of&nbsp;The&nbsp;Day"></span>Tweets of The Day</h3>
 							<time datetime="2019-11-06T20:06" class="listen-live__time">07.00-08.00</time>
 							<button class="listen-live__arrow">
 								<svg 
@@ -168,7 +186,7 @@
 								<button class="listen-live__list-item-play">							
 								</button>
 							</div>
-							<h4 class="listen-live__name"><span data-text="Radio&nbsp;News"></span>Radio News</h4>
+							<h3 class="listen-live__name"><span data-text="Radio&nbsp;News"></span>Radio News</h3>
 							<time datetime="2019-11-06T20:06" class="listen-live__time">08.00-09.00</time>
 							<button class="listen-live__arrow">
 								<svg 
@@ -188,7 +206,7 @@
 								<button class="listen-live__list-item-play">								
 								</button>
 							</div>
-							<h4 class="listen-live__name"><span data-text="Moral&nbsp;Maze"></span>Moral Maze</h4>
+							<h3 class="listen-live__name"><span data-text="Moral&nbsp;Maze"></span>Moral Maze</h3>
 							<time datetime="2019-11-06T20:06" class="listen-live__time">09.00-10.00</time>
 							<button class="listen-live__arrow">
 								<svg 
@@ -208,7 +226,7 @@
 								<button class="listen-live__list-item-play">									
 								</button>
 							</div>
-							<h4 class="listen-live__name"><span data-text="Beyond&nbsp;Today"></span>Beyond Today</h4>
+							<h3 class="listen-live__name"><span data-text="Beyond&nbsp;Today"></span>Beyond Today</h3>
 							<time datetime="2019-11-06T20:06" class="listen-live__time">10.00-11.00</time>
 							<button class="listen-live__arrow">
 								<svg 
@@ -228,7 +246,7 @@
 								<button class="listen-live__list-item-play">								
 								</button>
 							</div>
-							<h4 class="listen-live__name"><span data-text="Nature&nbsp;Of&nbsp;Beauty"></span>Nature Of Beauty</h4>
+							<h3 class="listen-live__name"><span data-text="Nature&nbsp;Of&nbsp;Beauty"></span>Nature Of Beauty</h3>
 							<time datetime="2019-11-06T20:06" class="listen-live__time">11.00-12.00</time>
 							<button class="listen-live__arrow">
 								<svg 
@@ -248,7 +266,7 @@
 								<button class="listen-live__list-item-play">
 								</button>
 							</div>
-							<h4 class="listen-live__name"><span data-text="Indie&nbsp;Roadtrip"></span>Indie Roadtrip</h4>
+							<h3 class="listen-live__name"><span data-text="Indie&nbsp;Roadtrip"></span>Indie Roadtrip</h3>
 							<time datetime="2019-11-06T20:06" class="listen-live__time">12.00-13.00</time>
 							<button class="listen-live__arrow">
 								<svg 
@@ -263,6 +281,7 @@
 							</button>
 						</li>
 					</ul>
+					<!--div class="swiper-pagination"></div-->
 				 </div>
 			 	<button class="listen-live__button-left">
 					<svg 
@@ -291,9 +310,9 @@
 				</h2>
 				<ul class="hot-podcasts__list">
 					<li class="rob-chapman">
-						<h4 class="hot-podcasts__author"><span data-text="Nile&nbsp;Rodgers"></span>
+						<h3 class="hot-podcasts__author"><span data-text="Nile&nbsp;Rodgers"></span>
 							Nile Rodgers
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							65 min
 						</p>
@@ -304,9 +323,9 @@
 
 					</li>
 					<li class="the-beatles">
-						<h4 class="hot-podcasts__author"><span data-text="The&nbsp;Beatles"></span>
+						<h3 class="hot-podcasts__author"><span data-text="The&nbsp;Beatles"></span>
 							The Beatles
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							65 min
 						</p>
@@ -316,9 +335,9 @@
 						</button>
 					</li>
 					<li class="kanye-west">
-						<h4 class="hot-podcasts__author"><span data-text="Daft&nbsp;Punk"></span>
+						<h3 class="hot-podcasts__author"><span data-text="Daft&nbsp;Punk"></span>
 							Daft Punk
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							50 min
 						</p>
@@ -328,9 +347,9 @@
 						</button>
 					</li>
 					<li class="david-bowie">
-						<h4 class="hot-podcasts__author"><span data-text="David&nbsp;Bowie"></span>
+						<h3 class="hot-podcasts__author"><span data-text="David&nbsp;Bowie"></span>
 							David Bowie
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							65 min
 						</p>
@@ -340,9 +359,9 @@
 						</button>
 					</li>
 					<li class="radio-woman">
-						<h4 class="hot-podcasts__author"><span data-text="Counties&nbsp;Radio"></span>
+						<h3 class="hot-podcasts__author"><span data-text="Counties&nbsp;Radio"></span>
 							Counties Radio
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							65 min
 						</p>
@@ -352,9 +371,9 @@
 						</button>
 					</li>
 					<li class="man-no-bg">
-						<h4 class="hot-podcasts__author"><span data-text="Cambridgeshire"></span>
+						<h3 class="hot-podcasts__author"><span data-text="Cambridgeshire"></span>
 							Cambridgeshire
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							65 min
 						</p>
@@ -364,9 +383,9 @@
 						</button>
 					</li>
 					<li class="newcastle">
-						<h4 class="hot-podcasts__author"><span data-text="Newcastle"></span>
+						<h3 class="hot-podcasts__author"><span data-text="Newcastle"></span>
 							Newcastle
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							50 min
 						</p>
@@ -376,9 +395,9 @@
 						</button>
 					</li>
 					<li class="lancashire">
-						<h4 class="hot-podcasts__author"><span data-text="Lancashire"></span>
+						<h3 class="hot-podcasts__author"><span data-text="Lancashire"></span>
 							Lancashire
-						</h4>
+						</h3>
 						<p class="hot-podcasts__time">
 							65 min
 						</p>
@@ -438,9 +457,9 @@
 				</button>		
 				<ul id="week__track-list-mo" class="week__track-list week__track-list-active faded in">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Foorti"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Foorti"></span>
 							Radio Foorti
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -453,9 +472,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Thr&nbsp;Gegar"></span>
+						<h3 class="week__author"><span data-text="Thr&nbsp;Gegar"></span>
 							Thr Gegar
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -468,9 +487,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Sinar&nbsp;FM"></span>
+						<h3 class="week__author"><span data-text="Sinar&nbsp;FM"></span>
 							Sinar FM
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -483,9 +502,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Dhaka&nbsp;FM"></span>
+						<h3 class="week__author"><span data-text="Dhaka&nbsp;FM"></span>
 							Dhaka FM
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -498,9 +517,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Abiram"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Abiram"></span>
 							Radio Abiram
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -513,9 +532,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Ekattor"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Ekattor"></span>
 							Radio Ekattor
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -528,9 +547,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Priyo&nbsp;Radio"></span>
+						<h3 class="week__author"><span data-text="Priyo&nbsp;Radio"></span>
 							Priyo Radio
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -543,9 +562,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Munna"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Munna"></span>
 							Radio Munna
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -558,9 +577,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Bangladesh&nbsp;Betar"></span>
+						<h3 class="week__author"><span data-text="Bangladesh&nbsp;Betar"></span>
 							Bangladesh Betar
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -573,9 +592,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="ABC&nbsp;Radio"></span>
+						<h3 class="week__author"><span data-text="ABC&nbsp;Radio"></span>
 							ABC Radio
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -590,9 +609,9 @@
 				</ul>
 				<ul id="week__track-list-tu" class="week__track-list faded">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;1"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;1"></span>
 							Radio Tuesday 1
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -605,9 +624,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;2"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;2"></span>
 							Radio Tuesday 2
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -620,9 +639,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;3"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;3"></span>
 							Radio Tuesday 3
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -635,9 +654,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;4"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;4"></span>
 							Radio Tuesday 4
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -650,9 +669,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;5"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;5"></span>
 							Radio Tuesday 5
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -665,9 +684,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;6"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;6"></span>
 							Radio Tuesday 6
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -680,9 +699,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;7"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;7"></span>
 							Radio Tuesday 7
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -695,9 +714,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;8"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;8"></span>
 							Radio Tuesday 8
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -710,9 +729,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;9"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Tuesday&nbsp;9"></span>
 							Radio Tuesday 9
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -727,9 +746,9 @@
 				</ul>
 				<ul id="week__track-list-we" class="week__track-list faded">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;1"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;1"></span>
 							Radio Wednesday 1
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -742,9 +761,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;2"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;2"></span>
 							Radio Wednesday 2
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -757,9 +776,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;3"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;3"></span>
 							Radio Wednesday 3
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -772,9 +791,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;4"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;4"></span>
 							Radio Wednesday 4
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -787,9 +806,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;5"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;5"></span>
 							Radio Wednesday 5
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -802,9 +821,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;6"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;6"></span>
 							Radio Wednesday 6
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -817,9 +836,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;7"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;7"></span>
 							Radio Wednesday 7
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -832,9 +851,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;8"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Wednesday&nbsp;8"></span>
 							Radio Wednesday 8
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -849,9 +868,9 @@
 				</ul>
 				<ul id="week__track-list-th" class="week__track-list faded">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;1"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;1"></span>
 							Radio Thursday 1
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -864,9 +883,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;2"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;2"></span>
 							Radio Thursday 2
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -879,9 +898,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;3"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;3"></span>
 							Radio Thursday 3
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -894,9 +913,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;4"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;4"></span>
 							Radio Thursday 4
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -909,9 +928,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;5"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;5"></span>
 							Radio Thursday 5
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -924,9 +943,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;6"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;6"></span>
 							Radio Thursday 6
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -939,9 +958,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;7"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Thursday&nbsp;7"></span>
 							Radio Thursday 7
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -956,9 +975,9 @@
 				</ul>
 				<ul id="week__track-list-fr" class="week__track-list faded">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;1"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;1"></span>
 							Radio Friday 1
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -971,9 +990,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;2"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;2"></span>
 							Radio Friday 2
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -986,9 +1005,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;3"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;3"></span>
 							Radio Friday 3
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1001,9 +1020,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;4"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;4"></span>
 							Radio Friday 4
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1016,9 +1035,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;5"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;5"></span>
 							Radio Friday 5
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1031,9 +1050,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;6"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Friday&nbsp;6"></span>
 							Radio Friday 6
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1048,9 +1067,9 @@
 				</ul>
 				<ul id="week__track-list-sa" class="week__track-list faded">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;1"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;1"></span>
 							Radio Saturday 1
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1063,9 +1082,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;2"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;2"></span>
 							Radio Saturday 2
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1078,9 +1097,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;3"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;3"></span>
 							Radio Saturday 3
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1093,9 +1112,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;4"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;4"></span>
 							Radio Saturday 4
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1108,9 +1127,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;5"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;5"></span>
 							Radio Saturday 5
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1123,9 +1142,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;6"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;6"></span>
 							Radio Saturday 6
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1138,9 +1157,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;7"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Saturday&nbsp;7"></span>
 							Radio Saturday 7
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1155,9 +1174,9 @@
 				</ul>
 				<ul id="week__track-list-su" class="week__track-list faded">
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;1"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;1"></span>
 							Radio Sunday 1
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1170,9 +1189,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;2"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;2"></span>
 							Radio Sunday 2
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1185,9 +1204,9 @@
 						</time>						
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;3"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;3"></span>
 							Radio Sunday 3
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1200,9 +1219,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;4"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;4"></span>
 							Radio Sunday 4
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1215,9 +1234,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;5"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;5"></span>
 							Radio Sunday 5
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1230,9 +1249,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;6"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;6"></span>
 							Radio Sunday 6
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1245,9 +1264,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;7"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;7"></span>
 							Radio Sunday 7
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1259,9 +1278,9 @@
 						</time>
 					</li>
 					<li>
-						<h4 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;8"></span>
+						<h3 class="week__author"><span data-text="Radio&nbsp;Sunday&nbsp;8"></span>
 							Radio Sunday 8
-						</h4>
+						</h3>
 						<p class="week__genre">
 							pop – news – talk
 						</p>
@@ -1333,11 +1352,11 @@
 						<li class="video-story__list-item swiper-slide">
 							<img src="img/onerepublic-secrets.jpg" alt="onerepublic-secrets">
 							<button class="video-story__list-play">
-								<audio src="audios/02.AllTheRightMoves.mp3"></audio>
+								<audio src="audios/02.-All-The-Right-Moves.mp3"></audio>
 							</button>
-							<h4 class="video-story__list__author">
+							<h3 class="video-story__list__author">
 								OneRepublic
-							</h4>
+							</h3>
 							<p class="video-story__list__song">
 								Song
 							</p>
@@ -1349,11 +1368,11 @@
 						<li class="video-story__list-item swiper-slide">
 							<img src="img/charlie-puth-2015-billboard-650_0.jpg" alt="charlie-puth">
 							<button class="video-story__list-play">
-								<audio src="audios/CharliePuth–OneCallAway.mp3"></audio>
+								<audio src="audios/Charlie-Puth-–-One-Call-Away.mp3"></audio>
 							</button>
-							<h4 class="video-story__list__author">
+							<h3 class="video-story__list__author">
 								Charlie Puth
-							</h4>
+							</h3>
 							<p class="video-story__list__song">
 								Song
 							</p>
@@ -1361,11 +1380,11 @@
 						<li class="video-story__list-item swiper-slide">
 							<img src="img/edsheeran.jpg" alt="edsheeran">
 							<button class="video-story__list-play">
-								<audio src="audios/EdSheeran–ShapeofYou.mp3"></audio>
+								<audio src="audios/Ed-Sheeran-–-Shape-of-You.mp3"></audio>
 							</button>
-							<h4 class="video-story__list__author">
+							<h3 class="video-story__list__author">
 								Ed Sheeran
-							</h4>
+							</h3>
 							<p class="video-story__list__song">
 								Song
 							</p>
@@ -1373,11 +1392,11 @@
 						<li class="video-story__list-item swiper-slide">
 							<img src="img/eminem.jpg" alt="eminem">
 							<button class="video-story__list-play">
-								<audio src="audios/Eminem–NotAfraid.mp3"></audio>
+								<audio src="audios/Eminem-–-Not-Afraid.mp3"></audio>
 							</button>
-							<h4 class="video-story__list__author">
+							<h3 class="video-story__list__author">
 								Eminem
-							</h4>
+							</h3>
 							<p class="video-story__list__song">
 								Song
 							</p>
@@ -1385,11 +1404,11 @@
 						<li class="video-story__list-item swiper-slide">
 							<img src="img/imagine-dragons.jpg" alt="imagine-dragons">
 							<button class="video-story__list-play">
-								<audio src="audios/04.Demons.mp3"></audio>
+								<audio src="audios/04.-Demons.mp3"></audio>
 							</button>
-							<h4 class="video-story__list__author">
+							<h3 class="video-story__list__author">
 								Imagine Dragons
-							</h4>
+							</h3>
 							<p class="video-story__list__song">
 								Song
 							</p>
@@ -1406,11 +1425,13 @@
 				<div class="music-chart__tracks">
 					<ul class="music-chart__tracklist">
 						<li class="music-chart__tracklist__item">
-							<span class="music-chart__tracklist__tracknumber">1</span>
-							<img src="img/sicko-mode-travis-scott.jpg" alt="sicko-mode-travis-scott">
-							<div class="music-chart__tracklist__track">
-								<h4 class="music-chart__tracklist__trackname">Sicko Mode</h4>
-								<p class="music-chart__tracklist__author">Travis Scott</p>
+							<div class="music-chart__tracklist__item-left">
+								<span class="music-chart__tracklist__tracknumber">1</span>
+								<img src="img/sicko-mode-travis-scott.jpg" alt="sicko-mode-travis-scott">
+								<div class="music-chart__tracklist__track">
+									<h3 class="music-chart__tracklist__trackname">Sicko Mode</h3>
+									<p class="music-chart__tracklist__author">Travis Scott</p>
+								</div>
 							</div>
 							<a href="#sicko-mode" class="music-chart__play">
 								<span><img src="img/play-hot-podcasts.svg" alt="play"></span>
@@ -1418,11 +1439,13 @@
 							<button class="music-chart__tracklist__bag"></button>
 						</li>
 						<li class="music-chart__tracklist__item music-chart__tracklist__item-active">
-							<span class="music-chart__tracklist__tracknumber">2</span>
-							<img src="img/lucid-dreams.png" alt="lucid-dreams">
-							<div class="music-chart__tracklist__track">
-								<h4 class="music-chart__tracklist__trackname">Lucid Dreams</h4>
-								<p class="music-chart__tracklist__author">Juice WRLD</p>
+							<div class="music-chart__tracklist__item-left">
+								<span class="music-chart__tracklist__tracknumber">2</span>
+								<img src="img/lucid-dreams.png" alt="lucid-dreams">
+								<div class="music-chart__tracklist__track">
+									<h3 class="music-chart__tracklist__trackname">Lucid Dreams</h3>
+									<p class="music-chart__tracklist__author">Juice WRLD</p>
+								</div>
 							</div>
 							<a href="#lucid-dreams" class="music-chart__play">
 								<span><img src="img/play-hot-podcasts.svg" alt="play"></span>
@@ -1430,11 +1453,13 @@
 							<button class="music-chart__tracklist__bag"></button>
 						</li>
 						<li class="music-chart__tracklist__item">
-							<span class="music-chart__tracklist__tracknumber">3</span>
-							<img src="img/happier-marshmello.jpg" alt="happier-marshmello">
-							<div class="music-chart__tracklist__track">
-								<h4 class="music-chart__tracklist__trackname">Happier</h4>
-								<p class="music-chart__tracklist__author">Marshmello & Bastille</p>
+							<div class="music-chart__tracklist__item-left">
+								<span class="music-chart__tracklist__tracknumber">3</span>
+								<img src="img/happier-marshmello.jpg" alt="happier-marshmello">
+								<div class="music-chart__tracklist__track">
+									<h3 class="music-chart__tracklist__trackname">Happier</h3>
+									<p class="music-chart__tracklist__author">Marshmello & Bastille</p>
+								</div>
 							</div>
 							<a href="#happier" class="music-chart__play">
 								<span><img src="img/play-hot-podcasts.svg" alt="play"></span>
@@ -1442,11 +1467,13 @@
 							<button class="music-chart__tracklist__bag"></button>
 						</li>
 						<li class="music-chart__tracklist__item">
-							<span class="music-chart__tracklist__tracknumber">4</span>
-							<img src="img/better-now-post-malone.jpg" alt="better-now-post-malone">
-							<div class="music-chart__tracklist__track">
-								<h4 class="music-chart__tracklist__trackname">Better Now</h4>
-								<p class="music-chart__tracklist__author">Post Malone</p>
+							<div class="music-chart__tracklist__item-left">
+								<span class="music-chart__tracklist__tracknumber">4</span>
+								<img src="img/better-now-post-malone.jpg" alt="better-now-post-malone">
+								<div class="music-chart__tracklist__track">
+									<h3 class="music-chart__tracklist__trackname">Better Now</h3>
+									<p class="music-chart__tracklist__author">Post Malone</p>
+								</div>
 							</div>
 							<a href="#better-now" class="music-chart__play">
 								<span><img src="img/play-hot-podcasts.svg" alt="play"></span>
@@ -1559,25 +1586,9 @@
 						</table>
 					</div>
 				</div>
-				<div class="music-chart__view-tracklist">
-					<span>View Tracklist</span>
-					<button>
-						<svg 
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="55px" height="11px">
-						<defs>
-						<linearGradient id="PSgrad_21" x1="100%" x2="0%" y1="0%" y2="0%">
-						  <stop offset="0%" stop-color="rgb(255,125,86)" stop-opacity="1" />
-						  <stop offset="100%" stop-color="rgb(255,73,142)" stop-opacity="1" />
-						</linearGradient>
-
-						</defs>
-						<path fill="url(#PSgrad_21)"
-						 d="M54.760,5.223 L48.197,0.185 C47.942,-0.014 47.662,-0.052 47.359,0.070 C47.056,0.193 46.904,0.415 46.904,0.737 L46.904,4.553 L0.766,4.553 C0.543,4.553 0.359,4.621 0.216,4.759 C0.072,4.897 0.000,5.073 0.000,5.288 L0.000,5.874 C0.000,6.088 0.072,6.264 0.216,6.402 C0.359,6.540 0.543,6.608 0.766,6.608 L46.904,6.608 L46.904,10.265 C46.904,10.572 47.057,10.794 47.359,10.931 C47.663,11.054 47.942,11.007 48.198,10.794 L54.761,6.301 C54.920,6.148 54.999,5.965 54.999,5.750 C54.999,5.551 54.920,5.375 54.760,5.223 Z"/>
-						</svg>
-					</button>
-				</div>
+				<button class="music-chart__view-tracklist">
+					View Tracklist
+				</button>
 			</div>
 		</section>
 	</main>
@@ -1592,11 +1603,13 @@
 							<option selected value="English(UK)">English(UK)</option>
 						</select>
 					</form>
-					<button class="footer__sign-in-button">Sign in</button>
-					<button class="footer__sign-up-button">Sign up</button>
+					<div>
+						<button class="footer__sign-in-button">Sign in</button>
+						<button class="footer__sign-up-button">Sign up</button>
+					</div>
 				</div>
 				<div class="footer__links footer__links__1">
-					<h4>Our services</h4>
+					<h3>Our&nbsp;services</h3>
 					<ul>
 						<li><a href="#">Web Application</a></li>
 						<li><a href="#">UX Development</a></li>
@@ -1607,7 +1620,7 @@
 					</ul>
 				</div>
 				<div class="footer__links footer__links__2">
-					<h4>Quick Links</h4>
+					<h3>Quick&nbsp;Links</h3>
 					<ul>
 						<li><a href="#">Payment Options</a></li>
 						<li><a href="#">Free Schedule</a></li>
@@ -1617,7 +1630,7 @@
 					</ul>
 				</div>
 				<div class="footer__our-event">
-					<h4>Our event</h4>
+					<h3>Our event</h3>
 					<ul>
 						<li>
 							<button class="footer__our-event-button">
@@ -1752,8 +1765,10 @@
 					<input class="input-text" type="text" id="sign-in__username" size="25" name="sign-in__username" required="required" maxlength="50">
 					<label for="sign-in__password" class="label-text">Password:</label>
 					<input class="input-text" type="password" id="sign-in__password" size="25" name="password-sign-in" required="required" maxlength="50">
-					<input class="input-checkbox" type="checkbox" id="sign-in__remember" name="remember">
-					<label for="sign-in__remember" class="label-checkbox">Remember me</label>
+					<div class="popup__checkbox-block">
+						<input class="input-checkbox" type="checkbox" id="sign-in__remember" name="remember">
+						<label for="sign-in__remember" class="label-checkbox">Remember me</label>
+					</div>
 					<input class="input-submit" type="submit" name="sign-in__submit" value="Sign in" >
 				</form>
 				<a href="#forgot-password">Forgot password?</a>
@@ -1762,7 +1777,7 @@
 				<h3>Reset Password</h3>
 				<form>
 					<label for="forgot-password__email" class="label-text">Your e-mail:</label>
-					<input class="input-text" type="email" id="forgot-password__email" name="email-forgot-password" required="required" maxlength="50">
+					<input class="input-text" type="email" id="forgot-password__email" name="email-forgot-password" required="required" maxlength="50" size="25">
 					<input class="input-submit" type="submit" name="forgot-password__submit" value="Get New Password">
 				</form>
 			</div>
@@ -1771,27 +1786,44 @@
 				<p>Please fill this form to create an account</p>
 				<form>
 					<label for="sign-up__username" class="label-text">Username:</label>
-					<input class="input-text" type="text" id="sign-up__username" size="30" name="sign-up__username" required="required" maxlength="50">
+					<input class="input-text" type="text" id="sign-up__username" size="25" name="sign-up__username" required="required" maxlength="50">
 					<label for="sign-up__email" class="label-text">Your e-mail:</label>
-					<input class="input-text" type="email" id="sign-up__email" name="email-sign-up" required="required" maxlength="50">
+					<input class="input-text" type="email" id="sign-up__email" name="email-sign-up" required="required" maxlength="50" size="25">
 					<label for="sign-up__password" class="label-text">Password:</label>
-					<input class="input-text" type="password" id="sign-up__password" size="30" name="password-sign-up" required="required" maxlength="50">
+					<input class="input-text" type="password" id="sign-up__password" size="25" name="password-sign-up" required="required" maxlength="50">
 					<label for="sign-up__confirm-password" class="label-text">Confirm Password:</label>
-					<input class="input-text" type="password" id="sign-up__confirm-password" size="30" name="confirm-password-sign-up" required="required" maxlength="50">
-					<input class="input-checkbox" type="checkbox" id="sign-up__accept" name="accept">
-					<label for="sign-up__accept" class="label-checkbox">
-						I accept the Terms of Use & Privacy Policy
-					</label>
+					<input class="input-text" type="password" id="sign-up__confirm-password" size="25" name="confirm-password-sign-up" required="required" maxlength="50">
+					<div class="popup__checkbox-block">
+						<input class="input-checkbox" type="checkbox" id="sign-up__accept" name="accept">
+						<label for="sign-up__accept" class="label-checkbox">
+							I accept the Terms of Use & Privacy Policy
+						</label>
+					</div>
 					<input class="input-submit" type="submit" name="sign-up__submit" value="Sign up" >
 				</form>
 			</div>
 		</div>
 	</div>
 	<script>
+
 	  var mySwiper = new Swiper ('.swiper-container', {
 	    direction: 'horizontal',
 	    loop: true,
-	    slidesPerView: 5,
+	    slidesPerView: 1,
+	    breakpoints: {
+	    	560: {
+	    		slidesPerView: 2
+	    	},
+	    	768: {
+	    		slidesPerView: 3
+	    	},
+	    	1230: {
+	    		slidesPerView: 4
+	    	},
+	    	1770: {
+	    		slidesPerView: 5
+	    	}
+	    },
 
 	    navigation: {
 	      nextEl: '.listen-live__button-right',
@@ -1802,7 +1834,18 @@
 	  var myNewSwiper = new Swiper ('.video-story-swiper', {
 	    direction: 'horizontal',
 	    loop: true,
-	    slidesPerView: 4,
+	    slidesPerView: 1,
+	    breakpoints: {
+	    	560: {
+	    		slidesPerView: 2
+	    	},
+	    	1016: {
+	    		slidesPerView: 3
+	    	},
+	    	1770: {
+	    		slidesPerView: 4
+	    	}
+	    },
 
 	    navigation: {
 	      nextEl: '.video-story__button-right',
