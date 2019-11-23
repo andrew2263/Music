@@ -37,31 +37,24 @@
 	$('.header__button-search').on('click', function(e){
 		e.preventDefault();
 		$('.header__buttons-input').toggleClass('header__buttons-input-visible');
+		if ($(window).width() < 560) {
+			$('.header__logo').toggleClass('none');
+			$('.header__logo').toggleClass('header__nav-open');
+		}
 	});
 
 	$('.header__burger').on('click', function(e) {
 		e.preventDefault();
 		disableScroll();
 		$('.header__nav').addClass('header__nav-open');
-		$('.header__nav-container').css('display', 'block');
+		$('.header__nav-container').addClass('header__nav-open');
 	});
 
 	$('.header__close').on('click', function(e) {
 		e.preventDefault();
 		enableScroll();
 		$('.header__nav').removeClass('header__nav-open');
-		$('.header__nav-container').css('display', 'none');
-	});
-
-	$(window).scroll(function() {
-		let devWidth = $(window).width();
-		if (devWidth <= 1770 && devWidth > 768) {
-			if ($(window).scrollTop() > 80) {
-				$('.header__logo').css('visibility', 'hidden');
-			} else {
-				$('.header__logo').css('visibility', 'visible');
-			}
-		}
+		$('.header__nav-container').removeClass('header__nav-open');
 	});
 
 	$('.week__days-day a').on('click', function(e) {
@@ -157,8 +150,7 @@
 		$('.music-chart__tracklist__item').removeClass('music-chart__tracklist__item-active');
 		$(track).addClass('music-chart__tracklist__item-active');
 		if (devWidth < 1024) {
-			let paddingTop = parseInt($('.music-chart__current-track').css('padding-top'));
-			let top = $(hrefChart).offset().top - paddingTop;
+			let top = $(hrefChart).offset().top - 70;
 			$('body, html').animate({scrollTop: top}, 300);
 		}
 	});
@@ -219,6 +211,20 @@
 		$('body').css('overflow-y', 'auto');
 		$(audio).trigger("pause");
 		isPlaying = false;
+	});
+
+	$('.blog-right-button').on('click', function(e) {
+		e.preventDefault();
+		$('.blog-second__right').css('display', 'block');
+		$('.blog-right-button').css('display', 'none');
+		$('.blog-right-button-close').css('display', 'inline');
+	});
+
+	$('.blog-right-button-close').on('click', function(e) {
+		e.preventDefault();
+		$('.blog-second__right').css('display', 'none');
+		$('.blog-right-button').css('display', 'inline');
+		$('.blog-right-button-close').css('display', 'none');
 	});
 
 	document.querySelector('.popup__play').addEventListener("click", function(e) {

@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="node_modules/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
 	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<script src="jquery-3.3.1.min.js"></script>
+	<script src="node_modules/swiper/js/swiper.min.js"></script>
 	<script src="script.js" defer></script>
-	<title>Videos</title>
+	<title>Blog Single</title>
 </head>
 <body>
 	<header class="header">
@@ -34,7 +36,7 @@
 								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
 									<a href="index.html"><span data-text="Home"></span>Home</a>
 								</li>
-								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
+								<li class="header__nav__item header__nav__item_active"><img src="img/home_img.png" alt="home=img">
 									<a href="blog.html"><span data-text="Blog"></span>Blog</a>
 								</li>
 								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
@@ -46,7 +48,7 @@
 								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
 									<a href="#"><span data-text="Team"></span>Team</a>
 								</li>
-								<li class="header__nav__item header__nav__item_active"><img src="img/home_img.png" alt="home=img">
+								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
 									<a href="video.html"><span data-text="Video"></span>Video</a>
 								</li>
 								<li class="header__nav__item"><img src="img/home_img.png" alt="home=img">
@@ -77,298 +79,157 @@
 		<section class="pages-first">
 			<div class="container">
 				<h1 class="pages-first__heading">
-					videos
+					blog single
 				</h1>
 				<ul class="breadcrumbs">
 					<li><a href="index.html"><span data-text="Home"></span>Home</a></li>
-					<li>Videos</li>
+					<li>Blog Single</li>
 				</ul>
 			</div>
 		</section>
-		<section class="video-second">
-			<div class="container video-second-container">
-				<ul id="page1" class="video-second__list faded">
-					<li class="video-second__list-item">
-						<img src="img/better-now-post-malone.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
+		<section class="blog-second">
+			<div class="container blog-second__container">
+				<div class="blog-second__left">
+					<img class="blog-second__left__main-img" src="img/maxresdefault.jpg" alt="image">
+					<h3>Bringing Live DJ Sets to Music Festivals.</h2>
+					<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod risus ligula, id luctus lectus volutpat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi sit amet nibh iaculis faucibus vitae et magna. Nulla bibendum, lectus et molestie vestibulum, tellus </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed bibendum leo. Mauris mauris massa, eleifend et purus vel, feugiat rutrum nulla. Cras vitae est vel ipsum faucibus fermentum a ultricies urna. Cum sociis natoque penatibus et magnis dis parturient montes. Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, </p>
+					<blockquote>
+						It's crazy, but the things you love, prospective buyers might hate—and that means you might have a hard time unloading your home when it comes time to sell. Here's how to choose
+						<cite>DE COCK</cite>
+					</blockquote>
+					<p>Donec gravida malesuada lacus, eget tristique Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate, tortor nec commodo ultricies, lectus nisl facilisis enim, vitae viverra urna nulla sed turpis. Nullam lacinia faucibus risus, a euismod lorem tincidunt id. Donec maximus placerat tempor. Clas</p>
+					<div class="blog-second__info-block">
+						<div class="blog-second__info__author-date">
+							<div>
+								<span class="blog-second__info__author">By admin</span>
+								<time class="blog-second__info__time" datetime="20.02.2018">Febrary 20th, 2018</time>
+							</div>
+							<div class="blog-second__social-networks">
+								<button class="blog-second__facebook"><i class="fab fa-facebook-f"></i></button>
+								<button class="blog-second__twitter"><i class="fab fa-twitter"></i></button>
+								<button class="blog-second__google"><i class="fab fa-google-plus-g"></i></button>
+								<button class="blog-second__instagram"><i class="fab fa-instagram"></i></button>
+							</div>
 						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/happier-marshmello.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
+						<div class="blog-second__info__tags">
+							<button class="blog-second__info__tags-tag">blog post</button>
+							<button class="blog-second__info__tags-tag">Artistic</button>
+							<button class="blog-second__info__tags-tag">real estate</button>
+							<button class="blog-second__info__tags-tag">family home</button>
 						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/lucid-dreams.png" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
+					</div>
+					<div class="blog-second__comments">
+						<h3>comments ( 2 )</h3>
+						<div class="blog-second__comments__comment">
+							<div class="blog-second__comments__avatar"></div>
+							<div class="blog-second__comments__comment-block">
+								<div class="blog-second__comments__comment-text">
+									<div class="blog-second__comments__comment-info">
+										<div>
+											<h4>Kavin smith</h4>
+											<span>CEO CHI ART PRO</span>
+										</div>
+										<button>REPLY</button>
+									</div>
+									<p>
+										Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehiculaa,Duis lacus
+									</p>
+								</div>
+								<div class="blog-second__comments__comment-new">
+									<div></div>
+									<input type="text" placeholder="Leave a message">
+									<button>REPLY</button>
+								</div>
+							</div>
 						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/sicko-mode-travis-scott.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
+						<div class="blog-second__comments__comment">
+							<div class="blog-second__comments__avatar"></div>
+							<div class="blog-second__comments__comment-block">
+								<div class="blog-second__comments__comment-text">
+									<div class="blog-second__comments__comment-info">
+										<div>
+											<h4>Kavin smith</h4>
+											<span>CEO CHI ART PRO</span>
+										</div>
+										<button>REPLY</button>
+									</div>
+									<p>
+										Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna, condimentum a vehiculaa,Duis lacus
+									</p>
+								</div>
+							</div>
 						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/wiz-khalifa-see-you-again.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/edsheeran.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/charlie-puth-2015-billboard-650_0.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/onerepublic-secrets.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-4.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-				</ul>
-				<ul id="page2" class="video-second__list video-second__list-active faded in">
-					<li class="video-second__list-item">
-						<img src="img/video-ul-1.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-2.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-3.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-4.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-5.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-6.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-7.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-8.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-ul-9.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-				</ul>
-				<ul id="page3" class="video-second__list faded">
-					<li class="video-second__list-item">
-						<img src="img/video-p3-1.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-2.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-3.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-4.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-5.png" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-6.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-7.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-8.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-					<li class="video-second__list-item">
-						<img src="img/video-p3-9.jpg" alt="video-ul-1">
-						<div class="video-second__info">
-							<span class="video-second__genre video-second__genre-active">Rock</span>
-							<span class="video-second__genre">Hip-Hop</span>
-							<span class="video-second__time">15 Min</span>
-						</div>
-						<h3 class="video-second__name"><span data-text="Leave&nbsp;Me&nbsp;Alone"></span>Leave Me Alone</h3>
-						<button class="video-second__play"></button>
-					</li>
-				</ul>
-				<ul class="video-second__pages">
-					<li class="video-second__pages-item"><a href="#page1">1</a></li>
-					<li class="video-second__pages-item video-second__pages-item-active"><a href="#page2">2</a></li>
-					<li class="video-second__pages-item"><a href="#page3">3</a></li>
-					<!--li class="video-second__pages-item"><a href="#">Next</a></li-->
-				</ul>
+						<form>
+							<h3>Leave a comment</h3>
+							<div>
+								<input class="blog-second__leave-comment-input" type="text" placeholder="Name" name="comment-name">
+								<input class="blog-second__leave-comment-input" type="email" placeholder="Email" name="comment-email">
+							</div>
+							<textarea name="comment-text" placeholder="Message"></textarea>
+							<input class="blog-second__leave-comment-submit" type="submit" name="comment-submit" value="Send now" aria-label="Send now">
+						</form>
+						<button class="blog-right-button"></button>
+						<button class="blog-right-button-close"></button>
+					</div>
+				</div>
+				<div class="blog-second__right">
+					<input type="search" class="blog-second__right__input" name="blog-search" placeholder="Search">
+					<h3 class="blog-second__right__heading">Categories</h3>
+					<table class="blog-second__right__table">
+						<tr>
+							<td class="table-name">Dessert</td>
+							<td class="table-number">3</td>
+						</tr>
+						<tr>
+							<td class="table-name">Vegetarian</td>
+							<td class="table-number">5</td>
+						</tr>
+						<tr>
+							<td class="table-name">Western</td>
+							<td class="table-number">2</td>
+						</tr>
+						<tr>
+							<td class="table-name">Photograph</td>
+							<td class="table-number">1</td>
+						</tr>
+						<tr>
+							<td class="table-name">Uncategorized</td>
+							<td class="table-number">0</td>
+						</tr>
+					</table>
+					<h3 class="blog-second__right__news-heading">Latest News</h3>
+					<ul class="blog-second__right__news">
+						<li>
+							<a href="#"><img src="img/news1.jpeg" alt="news1"></a>
+							<div class="blog-second__right__news-block">
+								<time datetime="19.01.2017">19- JAN- 2017</time>
+								<p><a href="#">Nullam at mauris fauci bus orci luctus pel.</a></p>
+							</div>
+						</li>
+						<li>
+							<a href="#"><img src="img/news2.jpg" alt="news2"></a>
+							<div class="blog-second__right__news-block">
+								<time datetime="25.01.2017">25- JAN- 2017</time>
+								<p><a href="#">Nullam at mauris fauci bus orci luctus pel.</a></p>
+							</div>
+						</li>
+						<li>
+							<a href="#"><img src="img/news3.jpg" alt="news3"></a>
+							<div class="blog-second__right__news-block">
+								<time datetime="28.01.2017">28- JAN- 2017</time>
+								<p><a href="#">Nullam at mauris fauci bus orci luctus pel.</a></p>
+							</div>
+						</li>
+					</ul>
+					<h3 class="blog-second__right__heading">Tags</h3>
+					<div class="blog-second__right__tags">
+						<button>Business</button>
+						<button>Success</button>
+						<button>Client Meetings</button>
+						<button>Charity</button>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
