@@ -113,10 +113,10 @@
 							</div>
 						</div>
 						<div class="blog-second__info__tags">
-							<button class="blog-second__info__tags-tag">blog post</button>
-							<button class="blog-second__info__tags-tag">Artistic</button>
-							<button class="blog-second__info__tags-tag">real estate</button>
-							<button class="blog-second__info__tags-tag">family home</button>
+							<a href="#" class="blog-second__info__tags-tag">blog post</a>
+							<a href="#" class="blog-second__info__tags-tag">Artistic</a>
+							<a href="#" class="blog-second__info__tags-tag">real estate</a>
+							<a href="#" class="blog-second__info__tags-tag">family home</a>
 						</div>
 					</div>
 					<div class="blog-second__comments">
@@ -169,65 +169,76 @@
 							<textarea name="comment-text" placeholder="Message"></textarea>
 							<input class="blog-second__leave-comment-submit" type="submit" name="comment-submit" value="Send now" aria-label="Send now">
 						</form>
-						<button class="blog-right-button"></button>
-						<button class="blog-right-button-close"></button>
 					</div>
+					<button class="blog-right-button"></button>
 				</div>
 				<div class="blog-second__right">
-					<input type="search" class="blog-second__right__input" name="blog-search" placeholder="Search">
-					<h3 class="blog-second__right__heading">Categories</h3>
-					<table class="blog-second__right__table">
-						<tr>
-							<td class="table-name">Dessert</td>
-							<td class="table-number">3</td>
-						</tr>
-						<tr>
-							<td class="table-name">Vegetarian</td>
-							<td class="table-number">5</td>
-						</tr>
-						<tr>
-							<td class="table-name">Western</td>
-							<td class="table-number">2</td>
-						</tr>
-						<tr>
-							<td class="table-name">Photograph</td>
-							<td class="table-number">1</td>
-						</tr>
-						<tr>
-							<td class="table-name">Uncategorized</td>
-							<td class="table-number">0</td>
-						</tr>
-					</table>
-					<h3 class="blog-second__right__news-heading">Latest News</h3>
-					<ul class="blog-second__right__news">
-						<li>
-							<a href="#"><img src="img/news1.jpeg" alt="news1"></a>
-							<div class="blog-second__right__news-block">
-								<time datetime="19.01.2017">19- JAN- 2017</time>
-								<p><a href="#">Nullam at mauris fauci bus orci luctus pel.</a></p>
-							</div>
-						</li>
-						<li>
-							<a href="#"><img src="img/news2.jpg" alt="news2"></a>
-							<div class="blog-second__right__news-block">
-								<time datetime="25.01.2017">25- JAN- 2017</time>
-								<p><a href="#">Nullam at mauris fauci bus orci luctus pel.</a></p>
-							</div>
-						</li>
-						<li>
-							<a href="#"><img src="img/news3.jpg" alt="news3"></a>
-							<div class="blog-second__right__news-block">
-								<time datetime="28.01.2017">28- JAN- 2017</time>
-								<p><a href="#">Nullam at mauris fauci bus orci luctus pel.</a></p>
-							</div>
-						</li>
-					</ul>
-					<h3 class="blog-second__right__heading">Tags</h3>
-					<div class="blog-second__right__tags">
-						<button>Business</button>
-						<button>Success</button>
-						<button>Client Meetings</button>
-						<button>Charity</button>
+					<div class="blog-second__right__content">
+						<form>
+							<input type="search" class="blog-second__right__input" name="blog-search" placeholder="Search">
+							<input type="submit" class="blog-second__right__submit" name="blog-search-submit" value="">
+						</form>
+						<h3 class="blog-second__right__heading">Categories</h3>
+						<ul class="blog-second__right__cathegories">
+							<li>
+								<div class="cathegories-name">Dessert</div>
+								<div class="cathegories-number">3</div>
+							</li>
+							<li>
+								<div class="cathegories-name">Vegetarian</div>
+								<div class="cathegories-number">5</div>
+							</li>
+							<li>
+								<div class="cathegories-name">Western</div>
+								<div class="cathegories-number">2</div>
+							</li>
+							<li>
+								<div class="cathegories-name">Photograph</div>
+								<div class="cathegories-number">1</div>
+							</li>
+							<li>
+								<div class="cathegories-name">Uncategorized</div>
+								<div class="cathegories-number">0</div>
+							</li>
+						</ul>
+						<h3 class="blog-second__right__news-heading">Latest News</h3>
+						<ul class="blog-second__right__news">
+							<li>
+								<a href="#">
+									<img src="img/news1.jpeg" alt="news1">
+									<div class="blog-second__right__news-block">
+										<time datetime="19.01.2017">19- JAN- 2017</time>
+										<p>Nullam at mauris fauci bus orci luctus pel.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/news2.jpg" alt="news2">
+									<div class="blog-second__right__news-block">
+										<time datetime="25.01.2017">25- JAN- 2017</time>
+										<p>Nullam at mauris fauci bus orci luctus pel.</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/news3.jpg" alt="news3">
+									<div class="blog-second__right__news-block">
+										<time datetime="28.01.2017">28- JAN- 2017</time>
+										<p>Nullam at mauris fauci bus orci luctus pel.</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<h3 class="blog-second__right__heading">Tags</h3>
+						<div class="blog-second__right__tags">
+							<a>Business</a>
+							<a>Success</a>
+							<a>Client Meetings</a>
+							<a>Charity</a>
+						</div>
+						<button class="blog-right-button-close"></button>
 					</div>
 				</div>
 			</div>

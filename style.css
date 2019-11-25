@@ -1821,7 +1821,7 @@ footer {
 .popup-container {
 	display: none;
 	position: fixed;
-	z-index: 100;
+	z-index: 4500;
 	top: 0;
 	width: 100%;
 	height: 100%;
@@ -1851,7 +1851,7 @@ footer {
 		color: #dbdbdb;
 		height: 25px;
 		width: 25px;
-		z-index: 100;
+		z-index: 5000;
 	}
 
 	.popup__video-story {
@@ -2694,9 +2694,11 @@ footer {
 	}
 
 	.blog-second__info__tags-tag {
+		display: inline-block;
+		text-decoration: none;
 		background-color: transparent;
 		border: 1px solid #30395e;
-		padding: 14px 14px;
+		padding: 10px 14px;
 		font-family: 'Rubik Regular', sans-serif;
 		font-size: 14px;
 		color: #adb1c0;
@@ -2967,7 +2969,13 @@ footer {
 		width: 340px;
 	}
 
+	.blog-second__right__content {
+		position: sticky;
+		top: 80px;
+	}
+
 	.blog-second__right__input {
+		position: relative;
 		width: 100%;
 		height: 25px;
 		margin-bottom: 65px;
@@ -2981,6 +2989,36 @@ footer {
 		border-right: none;
 		border-bottom: 1px solid #2f364f;
 		transition: all 300ms;
+	}
+
+	input[type="search"]::-webkit-search-decoration,
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-results-button,
+	input[type="search"]::-webkit-search-results-decoration {
+	  display: none; 
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus,
+	textarea:-webkit-autofill,
+	textarea:-webkit-autofill:hover,
+	textarea:-webkit-autofill:focus {
+	  -webkit-text-fill-color: #fff;
+	  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+	  transition: background-color 5000s ease-in-out 0s;
+	}
+
+	.blog-second__right__submit {
+		position: absolute;
+		right: 25px;
+		top: 0;
+		height: 15px;
+		width: 14px;
+		background-image: url('img/input.png');
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
 	}
 
 	.blog-second__right__input::placeholder {
@@ -3004,33 +3042,53 @@ footer {
 		margin-bottom: 15px;
 	}
 
-	.blog-second__right__table {
-		border-spacing: 0;
+	.blog-second__right__cathegories {
 		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		list-style-type: none;
 		margin-bottom: 55px;
 	}
 
-	.blog-second__right__table tr {
-		width: 100%;
+	.blog-second__right__cathegories li {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		justify-content: space-between;
 		height: 40px;
-	}
-
-	.blog-second__right__table td {
+		width: 100%;
+		-ms-align-items: center;
+		align-items: center;
 		border-bottom: 1px solid #2f364f;
 		font-family: 'Poppins Regular', sans-serif;
 		font-size: 15px;
 		color: #848597;
 	}
 
-	.blog-second__right__table tr:last-child td {
+	.blog-second__right__cathegories li:last-child {
 		border-bottom: none;
 	}
 
-		.table-name {
+		.cathegories-name {
 			width: 90%;
 		}
 
-		.table-number {
+		.cathegories-number {
 			width: 10%;
 		}
 
@@ -3054,6 +3112,12 @@ footer {
 	}
 
 	.blog-second__right__news li {
+		display: block;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	.blog-second__right__news li a {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -3065,7 +3129,6 @@ footer {
 		-o-flex-direction: row;
 		flex-direction: row;
 		justify-content: flex-start;
-		margin-bottom: 25px;
 	}
 
 	.blog-second__right__news li:last-child {
@@ -3080,8 +3143,13 @@ footer {
 		transition: all 300ms;
 	}
 
-	.blog-second__right__news li img:hover {
+	.blog-second__right__news li a:hover img {
 		opacity: 0.75;
+		transition: all 300ms;
+	}
+
+	.blog-second__right__news li a:hover p {
+		color: #fff;
 		transition: all 300ms;
 	}
 
@@ -3094,10 +3162,11 @@ footer {
 		font-family: 'Poppins Medium', sans-serif;
 		font-size: 15px;
 		color: #fff;
+		text-align: left;
 		margin-bottom: 7px;
 	}
 
-	.blog-second__right__news-block a {
+	.blog-second__right__news-block p {
 		font-family: 'Poppins Semibold', sans-serif;
 		font-size: 16px;
 		line-height: 26px;
@@ -3105,18 +3174,19 @@ footer {
 		letter-spacing: -0.7px;
 		text-decoration: none;
 		transition: all 300ms;
-	}
-
-	.blog-second__right__news-block a:hover {
-		color: #fff;
-		transition: all 300ms;
+		text-align: left;
 	}
 
 	.blog-second__right__tags {
 		padding-left: 2px;
 	}
 
-	.blog-second__right__tags button {
+	.blog-second__right__tags a {
+		display: inline-flex;
+		text-decoration: none;
+		cursor: pointer;
+		-ms-align-items: center;
+		align-items: center;
 		height: 47px;
 		padding-left: 25px;
 		padding-right: 25px;
@@ -3131,7 +3201,7 @@ footer {
 		transition: all 300ms;
 	}
 
-	.blog-second__right__tags button:hover {
+	.blog-second__right__tags a:hover {
 		color: #fff;
 		transition: all 300ms;
 	}
@@ -4289,6 +4359,7 @@ footer {
 
 	.blog-second__left {
 		width: 100%;
+		z-index: 50;
 	}
 
 	.blog-second__right {
@@ -4298,14 +4369,23 @@ footer {
 		right: 0;
 		background-color: #141435;
 		padding: 15px;
-		display: none;
+		height: 100%;
+		opacity: 0;
+
+		transition: all 300ms;
+	}
+
+	.blog-second__right-open {
+		opacity: 1;
+		z-index: 1000;
+		transition: all 300ms;
 	}
 
 	.blog-right-button-close {
-		display: none;
-		position: fixed;
-		top: 500px;
-		right: 365px;
+		display: inline;
+		position: absolute;
+		top: 400px;
+		right: 270px;
 		z-index: 1000;
 	}
 
@@ -4314,6 +4394,7 @@ footer {
 		position: fixed;
 		top: 500px;
 		right: 0;
+		z-index: 2000;
 	}
 
 	.blog-second__leave-comment-input {
@@ -4736,10 +4817,6 @@ footer {
 		margin-right: 15px;
 	}
 
-	.blog-right-button-close {
-		right: 310px;
-	}
-
 }
 
 @media(max-width: 430px) {
@@ -4770,6 +4847,23 @@ footer {
 	.video-second__play {
 		top: 205px;
 	}
+
+	.blog-second__right {
+		width: 285px;
+	}
+
+	.blog-right-button-close {
+		right: 240px;
+	}
+
+	.popup {
+		width: 300px;
+	}
+
+	.input-text {
+		width: 200px;
+	}
+
 }
 
 @media(max-width: 359px) {
@@ -4872,9 +4966,5 @@ footer {
 		width: 300px;
 		height: 150px;
 		padding: 0;
-	}
-
-	.blog-right-button-close {
-		right: 290px;
 	}
 }
